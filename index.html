@@ -17,9 +17,44 @@
      <p class="text-center font-weight-bold">… Marvin Daniel Arce Vargas …</p>
 	 <p class="text-center">… AV21009 …</p>
 	 <p class="text-center">… Grupo de Trabajo: 08 …</p>
+	 <p class="text-center">… Guía 61c …</p>
 	 <p class="text-center"><button class="btn btn-primary" onclick="obtenerProductos();this.style.display='none';">Obtener Productos</button></p>
 	 <div id="listado" style="display:none;">
 
+		<div>
+			<h2>Formulario de Producto</h2>
+				<form id="formProducto">
+					<div>
+						<label for="foto">Foto:</label>
+						<input type="file" id="foto" name="foto" accept="image/*" required>
+					</div>
+					<div>
+						<label for="precio">Precio:</label>
+						<input type="number" id="precio" name="precio" step="0.01" required>
+					</div>
+					<div>
+						<label for="title">Título:</label>
+						<input type="text" id="title" name="title" required>
+					</div>
+					<div>
+						<label for="description">Descripción:</label>
+						<textarea id="description" name="description" rows="4" required></textarea>
+					</div>
+					<div>
+						<label for="category">Categoría:</label>
+						<select id="category" name="category" required>
+							<option value="">Seleccione una categoría</option>
+							<option value="electronicos">Electrónicos</option>
+							<option value="joyeria">Joyería</option>
+							<option value="caballeros">Caballeros</option>
+							<option value="damas">Damas</option>
+						</select>
+					</div>
+					<div>
+						<button type="submit">Agregar Producto</button>
+					</div>
+				</form>
+		</div>
 		
 	 <form name="filtroprods" id="filtroprods">
 	   Seleccione Categorias 
